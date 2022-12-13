@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/">JULIA</a>
+              <div class="dropdown-menu" aria-labelledby="julia">
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Главная страница</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">Про нас</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/contacts">Контакты</a>
+              <li class="nav-item">
+                 <a class="nav-link" href="/posts">Статьи</a>
+              </li>
+              <li class="nav-item">
+                 <a class="me-3 btn btn-warning" href="/create_article">Добавить</a>
+          </ul>
+          <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item">
+              <a target="_blank" rel="noopener" class="nav-link" href="https://google.com/"><i class="bi bi-google"></i>Поиск</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <footer id="footer" role="contentinfo">
+			<div class="row">
+
+				<div id="footer-colophon" class=" col-3">
+					<p>Desighner</p>
+					<small class="footnote">© 2022 JULIA Jobs.</small>
+				</div>
+				<nav class="col-3 col-offset-1" role="navigation" >
+					<h6><a href="">Информация</a></h6>
+					<ul>
+						<li><a href="https://authenticjobs.com/pricing/">Цены</a></li>
+						<li><a href="https://authenticjobs.com/guarantee/">Гарантия</a></li>
+						<li><a href="https://authenticjobs.com/contact/">Контакты</a></li>
+					</ul>
+				</nav>
+				<nav class="col-3 col-offset-1" role="navigation">
+					<h6><a href="https://authenticjobs.com/">Поиск работы</a></h6>
+					<ul>
+						<li><a href="https://authenticjobs.com/?search_job_type=full-time">Полный рабочий день </a></li>
+						<li><a href="https://authenticjobs.com/?search_job_type=freelance">Фриланс</a></li>
+						<li><a href="https://authenticjobs.com/?search_location=remote">Удаленная работа</a></li>
+						<li><a href="https://authenticjobs.com/?feed=job_feed">Новостная лента</a></li>
+						<li><a href="https://authenticjobs.com/resume-generator/">Генератор резюме</a></li>
+					</ul>
+				</nav>
+				<nav class="col-3 col-offset-1" role="navigation">
+					<h6><a href="about/">О нас</a></h6>
+					<ul>
+						<li><a href="https://authenticjobs.com/blog/">Блог</a></li>
+						<li><a href="https://authenticjobs.com/contact/">Наши контакты</a></li>
+						<li><a href="https://authenticjobs.com/faq/">FAQs</a></li>
+						<li><a href="https://authenticjobs.com/privacy/">Приватно</a>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+</body>
+</html>

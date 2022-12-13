@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="col-6">
+            <h1>Priced to hire</h1>
+        </div>
+    </div>
+
+   <div class="container">
+        <button data-v-4af8c184="" class="standart active"><span data-v-65753620="" class="slp-text-body1-bold"> Standart
+                        </span></button>
+        <button data-v-4af8c184="" class="premium"><span data-v-65753620="" class="slp-text-body1-bold "> Premium
+                        </span></button>
+   </div>
+
+    <div class="container">
+    <div class="card text-black bg-success mb-1" style="max-width: 20rem;">
+        <div class="card-header"><h1 class="flexible-h1"><span>$</span>149<strong>/мес</strong></h1></div>
+        <div class="card-body">
+            <h4 class="card-title"><em>Стандарт</em></h4>
+            <p class="card-text">Некоторые части контента.</p>
+        </div>
+
+        <button type="button" class="btn btn-dark">Войти</button>
+
+        <div class="card text-black bg-success mb-1" style="max-width: 20rem;">
+            <div class="card-header"><h1 class="flexible-h1 "><span>$</span>199<strong>/мес</strong></h1></div>
+            <div class="card-body">
+                <h4 class="card-title"><em>Премиум</em></h4>
+                <p class="card-text">Весь контент.</p>
+            </div>
+
+            <button type="button" class="btn btn-dark">Войти</button>
+        </div>
+
+    </div>
+    </div>
+{% endblock %}
